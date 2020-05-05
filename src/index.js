@@ -1,14 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import Card from "./Card";
+import "tachyons";
+
+import "./index.css";
+import * as serviceWorker from "./serviceWorker";
+import { robots } from "./robots";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {robots.map((robot) => (
+      <Card
+        key={robot.id}
+        id={robot.id}
+        name={robot.name}
+        email={robot.email}
+      />
+    ))}
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
