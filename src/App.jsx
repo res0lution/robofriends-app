@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import { robots } from "./robots";
 import { CardList } from "./CardList";
 import { SearchBox } from "./SearchBox";
 import "./App.css"
+import { Scroll } from "./Scroll";
 
 export const App = () => {
   const [values, setValues] = useState({
@@ -30,11 +30,15 @@ export const App = () => {
   return (
     <div className="tc">
       <h1>RoboFriends</h1>
+
       <SearchBox
         onSearchChange={onSearchChange}
         searchField={values.searchField}
       />
-      <CardList robots={filteredRobots} />
+
+      <Scroll>
+        <CardList robots={filteredRobots} />
+      </Scroll>
     </div>
   );
 };
