@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { robots } from "./robots";
 import { CardList } from "./CardList";
 import { SearchBox } from "./SearchBox";
+import "./App.css"
 
 export const App = () => {
   const [values, setValues] = useState({

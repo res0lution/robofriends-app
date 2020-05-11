@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Sega";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sega"), url("./fonts/SEGA.woff") format("woff");
+}
+
+h1 {
+  color: #0ccac4;
+  font-family: "Sega";
+  font-weight: 200;
+}
