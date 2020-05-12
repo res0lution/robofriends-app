@@ -2,7 +2,7 @@
   font-family: "Sega";
   font-style: normal;
   font-weight: normal;
-  src: local("Sega"), url("./fonts/SEGA.woff") format("woff");
+  src: local("Sega"), url("../fonts/SEGA.woff") format("woff");
 }
 
 h1 {
